@@ -1,0 +1,50 @@
+<!-- Modify Q8 to include button add and calculate in the front end. Use
+event listeners to add the row to a table on clicking it. Similarly
+display each of the items and the total price to be paid on the click of
+the calculate button. Create 3 programs for front end, styling and
+back end. -->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="9th.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1><u>BAKER's BASKET</u>
+      </h1>
+      <h3>Enter the details:</h3>
+
+      <div id="data">
+        Item Purchased:
+        <input type="text" id="item" placeholder="Item Purchased" />
+        <br /><br />
+        Quantity: <input type="number" id="quan" placeholder="Quantity" />
+        <br /><br />
+        Item Code: <input type="text" id="code" placeholder="Item Code" />
+        <br /><br />
+        Item Price: <input type="number" id="price" placeholder="Item Price" />
+        <br /><br />
+
+        <button id="add">Add</button>
+        <button id="calculate">Calculate</button>
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <table id="mytab" border="4px">
+        <tr>
+          <th>Item Purchased</th>
+          <th>Quantity</th>
+          <th>Item Code</th>
+          <th>Item Price</th>
+        </tr>
+      </table>
+
+      <br />
+      <p id="info"></p>
+    </div>
+    <script src="9th.js"></script>
+  </body>
+</html>

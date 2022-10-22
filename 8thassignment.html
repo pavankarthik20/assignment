@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head><title>assignment 2 of Javascript</title></head>
+    <body>
+        <h3>Your Local Grocery Store</h3>
+        Item Purchased:<input type="text" id="item"><br>
+        Quantity:<input type="text" id="qty"><br>
+        Item Code:<input type="text" id="code"><br>
+        Item Price:<input type="text" id="price"><br>
+        <button type="button" onclick="grocery()">Submit</button><br><br><br>
+        <table border="1">
+            <tr>
+                <th>Item Purchased</th>
+                <th>Quantity</th>
+                <th>Item Code</th>
+                <th>Item Price</th>
+            </tr>
+            <tr>
+                <td id="demo1"></td>
+                <td id="demo2"></td>
+                <td id="demo3"></td>
+                <td id="demo4"></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <u>total price:</u> <p id="total"></p>
+        <script>
+            function grocery(){
+                
+                const grocer= new Object();
+                grocer.item=document.getElementById("item").value;
+                grocer.qty=document.getElementById("qty").value;
+                grocer.code=document.getElementById("code").value;
+                grocer.price=document.getElementById("price").value;
+
+                document.getElementById("demo1").innerHTML=grocer.item;
+                document.getElementById("demo2").innerHTML=grocer.qty;
+                document.getElementById("demo3").innerHTML=grocer.code;
+                document.getElementById("demo4").innerHTML=grocer.price;
+
+                document.getElementById("total").innerHTML=grocer.price*grocer.qty;
+            }
+        
+        </script>
+
+    </body>
+</html>

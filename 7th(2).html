@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body >
+    <h2>BIODATA FORM </h2>
+    <h3>Enter Details </h3>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="temp1"></input></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" id="temp2"></input><br></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="text" id="temp3"></input><br></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" id="temp4"></input><br></td>
+        </tr>
+    </table><br>
+
+    <button type="button" onclick="anotherFunction()">Submit</button>
+    <script>
+            function anotherFunction()
+            {
+               a=document.getElementById("temp1").value;
+               
+               b=document.getElementById("temp2").value;
+               
+               c=document.getElementById("temp3").value;
+
+               d=document.getElementById("temp4").value;
+               
+               document.writeln(a);
+               document.writeln(b);
+               document.writeln(c);
+               document.writeln(d);
+            }
+    </script>
+</body>
+</html>

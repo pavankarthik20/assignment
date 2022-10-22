@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <body >
+        
+        <h2>TO FIND THE FACTORIAL OF A NUMBER</h2>
+        <br>
+        <h3>Enter a number</h3>
+        <script>
+            function myFunction()
+                {
+                a=parseInt(document.getElementById("n1").value);
+                fact=1;
+                for(i=1;i<=a;i++)
+                {
+                    fact=fact*i;
+                }
+                alert("The factorial of "+a+" is "+fact);
+                }
+
+
+        </script>
+       <Pre>                <input type="text" id="n1"></input><br><br></Pre>
+        <pre>                          <button type="button" onclick="myFunction()">Factorial</button><br><br></pre>
+
+</script>
+        
+
+
+    </head>
+    </body>
+</html>

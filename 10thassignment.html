@@ -1,0 +1,167 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-width=1.0">
+    <title>idenify the number</title>
+
+    <style>
+        .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#data{
+    margin-bottom: 12px;
+    color: rgb(211, 238, 213);
+}
+#data input,button{
+    padding: 10px;
+    width: 90px;
+    border-radius: 20PX;
+    border-block-color: black;
+    background-color: rgb(182, 213, 213);
+
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(226, 236, 226);
+    text-align: center;
+}
+.text{
+    text-shadow: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration-color: rgb(175, 195, 202);
+    text-transform: uppercase;
+    color:rgb(220, 234, 221);
+    
+}
+
+        body {
+          background-color: rgb(161, 161, 88);
+           background-image: url('https://wallpapers-hub.art/wallpaper-images/32460.jpg');
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div id="data">
+            <h2>
+                <div class="heading">
+                Find The Number</div>
+            </h2>
+            <div class="text">        
+            <pre>  <h3> enter number  <input type="number" id="input"  onfocus="focusevent()"></pre>
+            </div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <button id="fact">Factorial</button>
+            <script>
+                function focusevent()
+                {
+                    document.getElementById("input").style.background="lightcoral";
+                }
+                function f1()
+                    {
+                            var f,i,num;
+                            f=1;
+                            num = parseInt (prompt (" ENTERED NUMBER "));  
+                            document.write( "Factorial: "); 
+                            {
+                              for (i=1; i<=num;i++){
+                                document.write("<br>"+f);
+                                f=f*i;
+                              }  
+                            }                         
+                    };
+                function f2(){
+                    document.getElementById("p1").innerHTML="factorial";
+                }
+                var mybtn=document.getElementById("fact");
+                mybtn.addEventListener('click',f1);
+                mybtn.addEventListener("mouseover",f2);
+            </script>
+            <button id="prime">Prime</button>
+            <script>
+                function focusevent()
+                {
+                    document.getElementById("input").style.background="lightcoral";
+                }
+                function f1(){
+                    var num,i,flag=true;
+                    num = parseInt (prompt (" ENTERED NUMBER "));
+                    document.write("Prime number determination");
+                    {
+                        for(i = 2; i <= num - 1; i++)
+                            if (num % i == 0) {
+                                flag = false;
+                                break;
+                			}
+                        if (flag == true)
+                            document.write("<br>"+num+"is prime");
+                        else
+                            document.write("<br>"+num+" is not prime");
+                        }
+                }
+                function f2(){
+                    document.getElementById("p1").innerHTML="prime";
+                }
+                var mybtn=document.getElementById("prime");
+                mybtn.addEventListener('click',f1);
+                mybtn.addEventListener("mouseover",f2);
+            </script>
+            <button id="fibonacci">Fibonacci</button>
+            <script>
+                function focusevent()
+                {
+                    document.getElementById("input").style.background="lightcoral";
+                }
+                    function f1(){
+                        var n1 = 0,  n2 = 1, next_num, i;  
+                        var num = parseInt (prompt (" ENTERED NUMBER "));  
+                        document.write( "Fibonacci Series: ");  
+                        for ( i = 1; i <= num; i++)  
+                        {  document.write (" <br> " +  n1); 
+                           next_num = n1 + n2;   
+                           n1 = n2; 
+                           n2 = next_num;  
+                        }  ;
+                }
+                function f2(){
+                    document.getElementById("p1").innerHTML="fibonacci";
+                }
+                var mybtn=document.getElementById("fibonacci");
+                mybtn.addEventListener('click',f1);
+                mybtn.addEventListener("mouseover",f2);
+            </script>
+            <button id="Natural">Natural</button>
+            <script>
+                function focusevent()
+                {
+                    document.getElementById("input").style.background="lightcoral";
+                }
+                function f1(){
+                    var num;
+                    var num = parseInt (prompt (" ENTERED NUMBER "));  
+                    document.write( "natural number determination: ");  
+                    if (num>0){
+                        document.write("natural number");
+                    }
+                    else{
+                        document.write("not a natural number")
+                    }
+                }
+                function f2(){
+                    document.getElementById("p1").innerHTML="natural";
+                }
+                var mybtn=document.getElementById("Natural");
+                mybtn.addEventListener('click',f1);
+                mybtn.addEventListener("mouseover",f2);
+            </script>
+        </div>
+    <p id="info"></p>
+    </div> 
+</body>
+</html>

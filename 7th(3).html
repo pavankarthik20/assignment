@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor</title>
+</head>
+<body>
+    
+
+    <h1>Checking divisors for a number </h1>
+    Input Number
+    <input type="text" id="n2"></input><br><br>
+    Input Divisor:
+    <input type="text" id="n3"></input><br><br>
+    <button type="button" onclick="otherFunction()">Check</button>
+    <script>
+            function otherFunction()
+            {
+                a=parseInt(document.getElementById("n2").value);
+                b=parseInt(document.getElementById("n3").value);
+                i=a%b;
+                switch(i){
+                    case 0: document.writeln("It is a divisor.");
+                    break;
+                    case 1:document.writeln("Not a divisor.");
+                    break;
+                    default:document.writeln("Not a divisor.");
+                }
+            }
+    </script>
+</body>
+</html>
